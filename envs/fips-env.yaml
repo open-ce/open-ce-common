@@ -1,4 +1,4 @@
 builder_version: ">=10.0.1"
 
 packages:
-  - feedstock : openssl-fips
+  - feedstock : openssl-fips         #[x86_64]
