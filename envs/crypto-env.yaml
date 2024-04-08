@@ -1,0 +1,13 @@
+builder_version: ">=10.0.1"
+
+packages:
+{% if ppc64le %}
+  - feedstock : https://github.com/conda-forge/setuptools-rust-feedstock
+    git_tag : 7534e99fe8f61a0bfae25fa4638d4dd287ce793a
+  - feedstock : https://github.com/AnacondaRecipes/cryptography-feedstock
+    git_tag : d02e4ebb1307ff1937e308ae7b71b5a4eab65ad5
+    patches :
+      - feedstock-patches/cryptography/0001-changes-for-opence.patch
+  - feedstock : https://github.com/AnacondaRecipes/cryptography-vectors-feedstock
+    git_tag : 5d8fb9fd44f673342bd9e72bca057081e94944d7
+{% endif %}
