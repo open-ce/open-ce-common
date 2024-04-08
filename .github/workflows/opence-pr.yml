@@ -24,7 +24,8 @@ jobs:
       - name: Clone build tools
         shell: bash -l {0}
         run: |
-          git clone https://github.com/open-ce/open-ce-builder.git \
+#          git clone https://github.com/open-ce/open-ce-builder.git \
+           git clone https://github.com/cdeepali/open-ce-builder/ -b dc-addscriptforcommon \
                     ./open-ce-builder
           pip install ./open-ce-builder
       - name: Perform Release Dry-Run
