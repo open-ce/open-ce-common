@@ -2,3 +2,4 @@ builder_version: ">=10.0.1"
 
 packages:
   - feedstock : openssl-fips         #[x86_64]
+git_tag_for_env: open-ce-v1.0.0
