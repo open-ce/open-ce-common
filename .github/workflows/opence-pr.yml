@@ -25,9 +25,9 @@ jobs:
         shell: bash -l {0}
         run: |
 #          git clone https://github.com/open-ce/open-ce-builder.git \
-           git clone https://github.com/cdeepali/open-ce-builder.git -b dc-addscriptforcommon \
-                  ./open-ce-builder
-          pip install ./open-ce-builder
+#                  ./open-ce-builder
+#          pip install ./open-ce-builder
+           pip install git+https://github.com/cdeepali/open-ce-builder.git@dc-addscriptforcommon
       - name: Perform Release Dry-Run
         shell: bash -l {0}
         run: |
