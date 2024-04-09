@@ -3,4 +3,4 @@ builder_version: ">=13.0.0"
 imported_envs:
   - fips-env.yaml          #[x86_64]
   - crypto-env.yaml        #[ppc64le]
-git_tag_for_env: open-ce-v1.0.0
+git_tag_for_env: open-ce-common-v1.0.0
