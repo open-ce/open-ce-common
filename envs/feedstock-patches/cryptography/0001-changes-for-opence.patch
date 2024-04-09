@@ -1,25 +1,27 @@
-From fd21dc673b2da7fd56940e352aefa71c8a459c78 Mon Sep 17 00:00:00 2001
+From 89fd596dc84f90aa5b469d468bf904acd10c1120 Mon Sep 17 00:00:00 2001
 From: Deepali Chourasia <deepch23@in.ibm.com>
-Date: Fri, 5 Apr 2024 09:40:19 +0000
+Date: Tue, 9 Apr 2024 10:43:21 +0000
 Subject: [PATCH] changes for opence
 
 ---
- recipe/meta.yaml | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ recipe/meta.yaml | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/recipe/meta.yaml b/recipe/meta.yaml
-index 87d83a2..8bc2545 100644
+index 87d83a2..bbd5a55 100644
 --- a/recipe/meta.yaml
 +++ b/recipe/meta.yaml
-@@ -30,7 +30,7 @@ requirements:
+@@ -30,8 +30,9 @@ requirements:
      - setuptools >=61.0.0
      - setuptools-rust >=1.7.0
      - wheel
 -    - openssl {{openssl}}
 +    - openssl
      - cffi 1.15.1
++    - tomli    # [py==310]
    run:
      - python
+     - cffi >=1.12
 -- 
 2.40.1
 
