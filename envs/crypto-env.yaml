@@ -11,3 +11,5 @@ packages:
   - feedstock : https://github.com/AnacondaRecipes/cryptography-vectors-feedstock
     git_tag : 5d8fb9fd44f673342bd9e72bca057081e94944d7
 {% endif %}
+
+git_tag_for_env: open-ce-common-v1.0.0
